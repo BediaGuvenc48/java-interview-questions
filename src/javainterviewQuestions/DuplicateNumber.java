@@ -8,7 +8,9 @@ public class DuplicateNumber {
 	
 public static void main(String[] args) {
 		
-	int []array= {3,3,3,4,5,6,7,7,9,9};
+	int []array= {3,3,3,4,5,6,7,7,9,9,1};
+
+	findUniqueNumber(array);
 	
 	DuplicateNumber d= new DuplicateNumber();
 	
@@ -36,9 +38,37 @@ public static void main(String[] args) {
 		System.out.println(duplicate_number);
 		
 	}
-	
-	
-	
+
+
+	public static  void findUniqueNumber(int [] array) {
+		List<Integer>uniqueNumbers= new ArrayList<>();
+
+
+
+		for (int i=0;i<array.length ;i++ ) {
+
+
+			int first= array[i];
+
+			for (int z=0;z<array.length ;z++ ) {
+
+				if (first!=array[z]&& i!=z) {
+					uniqueNumbers.add(first);
+
+				}
+
+			}
+
+		}
+
+		System.out.println(uniqueNumbers);
+
+	}
+
+
+
+
+
 		
 		
 		

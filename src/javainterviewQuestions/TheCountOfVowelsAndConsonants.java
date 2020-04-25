@@ -2,6 +2,7 @@ package javainterviewQuestions;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 
 public class TheCountOfVowelsAndConsonants {
@@ -15,6 +16,8 @@ public class TheCountOfVowelsAndConsonants {
     }
 
     public static String numbers(String word) {
+
+
         int countVowels = 0;
         int countConsonants = 0;
 
